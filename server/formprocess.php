@@ -33,6 +33,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             <strong>Phone: </strong>'.$phone.'<br />
             <strong>Message: </strong>'.nl2br($message).'<br />
         ';
+        // adding headers
         $headers  = "MIME-Version: 1.1" . PHP_EOL;
         $headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
         $headers .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
